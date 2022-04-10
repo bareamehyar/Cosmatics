@@ -13,6 +13,13 @@
             <li class="breadcrumb-item"><a href="{{route("area.index", [$city->id,app()->getLocale()])}}">Areas</a></li>
             <li class="breadcrumb-item"><a href="#">Add</a></li>
         </ul>
+
+
+
+
+
+
+
     </div>
 @endsection
 @section("content")
