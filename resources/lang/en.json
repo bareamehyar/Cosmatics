@@ -1,0 +1,48 @@
+
+{
+
+    "_comment": "menu slidbar",
+
+    "Dashboard":"Dashboard",
+    "Categories Branches":"Categories Branches" ,
+    "Create New Category":"Create New Category",
+    "All Categories":"All Categories",
+    "Branches": "Branches",
+    "Create New Branch": "Create New Branch",
+    "All Branches": "All Branches",
+    "Categories": "Categories",
+    "Items": "Items",
+    "Create New Items": "Create New Items",
+    "All Items": "All Items",
+    "Offers": "Offers",
+    "Create New Offer": "Create New Offer",
+    "All Offers": "All Offers",
+    "Services": "Services",
+    "All Service": "All Service",
+    "Link Service with item": "Link Service with item",
+    "Sliders": "Sliders",
+    "Create New Slider": "Create New Slider",
+    "All Sliders": "All Sliders",
+    "Users": "Users",
+    "App Users": "App Users",
+    "Driver Users": "Driver Users",
+    "vendor Users": "endor Users",
+    "Admins": "Admins",
+    "Create New Admin": "Create New Admin",
+    "All Admins": "All Admins",
+    "Create New Roles": "Create New Roles",
+    "Roles & Permissions": "Roles & Permissions",
+    "Orders": "Orders",
+    "User Orders": "User Orders",
+    "cashier orders": "Cashier Orders",
+    "App Settings": "App Settings",
+    "Add New Location": "Add New Location",
+    "View All Locations as a Table": "View All Locations as a Table",
+    "View All Locations as a Tree": "View All Locations as a Tree",
+    "Reports": "Reports",
+    "Items Ordered":"Items Ordered",
+    "Users Ordered": "Users Ordered",
+    "Branches Sales": "Branches Sales"
+
+
+}

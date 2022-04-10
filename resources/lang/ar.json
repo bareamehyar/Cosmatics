@@ -1,0 +1,49 @@
+{
+
+
+    "_comment": "menu slidbar",
+
+    "Dashboard":"لوحة التحكم",
+    "Categories Branches":"تصنيفات الفروع" ,
+    "Create New Category":"اضافة تصنيف فرع جديد ",
+    "All Categories":" جميع التصنيفات",
+    "Branches": "الفروع",
+    "Create New Branch": "اضافة فرع جديد",
+    "All Branches": "جميع الفروع",
+    "Categories": "التصنيفات",
+    "Items": "القطع",
+    "Create New Items": "اضافة قطعة جديده",
+    "All Items": "جميع القطع",
+    "Offers": "العروض",
+    "Create New Offer": "اضافة عرض جديد",
+    "All Offers": "جميع العروض",
+    "Services": "الخدمات",
+    "All Service": "جميع الخدمات",
+    "Link Service with item": "ربط الخدمه مع القطعة",
+    "Sliders": "شريط العرض",
+    "Create New Slider": "اضافة شريط عرض",
+    "All Sliders": "",
+    "Users": "المستخدمين",
+    "App Users": "مستخدمين التطبيق",
+    "Driver Users": "التوصيل",
+    "vendor Users": "مشرف الطلبات",
+    "Admins": "المشرفين",
+    "Create New Admin": "اضافة مشرف جديد",
+    "All Admins": "جميع المشرفن",
+    "Create New Roles": "اضافة تخويل",
+    "Roles & Permissions": "التخويلات",
+    "Orders": "الطلبات",
+    "User Orders": "طلبات المستخدمين",
+    "cashier orders": "طلبات مشرف الصندوق",
+    "App Settings": "اعدادات التطبيق",
+    "Add New Location": "اضافة موقع جديد",
+    "View All Locations as a Table": "جميع المواقع  جدول",
+    "View All Locations as a Tree": "جميع المواقع ",
+    "Reports": "التقارير",
+    "Items Ordered":"تقارير الطلبات",
+    "Users Ordered": "تقارير المستخدمين",
+    "Branches Sales": "تقارير الفروع"
+
+
+
+}
