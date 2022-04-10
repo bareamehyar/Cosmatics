@@ -4,6 +4,7 @@ use App\Exports\ExeclExport;
 use App\Http\Controllers\Controller;
 use App\Models\BranchTable;
 use App\Models\CategoryList;
+use App\Models\ItemGallery;
 use App\Models\ItemsList;
 use App\Models\ItemSizes;
 use App\Models\ItemsColors;
@@ -63,24 +64,18 @@ class ItemsListController extends Controller
         $item->item_name_ar = $request->item_name_ar;
         $item->item_price = $request->item_price;
         $item->tax = $request->item_tax;
-
+        $filename = $request->item_image[0]->getClientOriginalName();
+        $item->item_image= "https://dashboard.cosmatics.digisolapps.com/uploads/items/".$filename;
         $item->item_description_ar = $request->item_description_ar;
         $item->item_description_en = $request->item_description_en;
         $item->category_id = $request->category_id;
 
         $item->item_status = 1;
-     $photoName = $this->upload($request->file("item_image"),$item->directory_path);
-        $item->item_image = $item->img_path_url  . $photoName;
-       
-        foreach ($photoName as $photo) {    
-            
-        $file_name=$photo->getClientOriginalName(); 
-        
-        }
+
         if($item->save()){
             $item->branches()->sync($request->branches_ids);
-            
-                       $last_insertedId = $item->id;
+
+            $last_insertedId = $item->id;
                         foreach($request->color as $color){
                             $colorModel = new ItemsColors();
                             // var_dump($color);
@@ -89,9 +84,19 @@ class ItemsListController extends Controller
                        
                             $colorModel->save();
                     }
-                    
-                    
-                    
+            $Allphoto=  $request->file("item_image");
+            foreach ($Allphoto as $photo) {
+                $filename = $photo->getClientOriginalName();
+                $photo->move('uploads/gallery/',$filename);
+//                $photo->storeAs('public/upload/gallery/', $filename);
+                $ProjectPhoto = new ItemGallery();
+                $ProjectPhoto->item_id = $last_insertedId;
+                $ProjectPhoto->image_url  = "https://dashboard.cosmatics.digisolapps.com/uploads/items/".$filename;
+                $ProjectPhoto->save();
+            }
+
+
+
                         foreach($request->Size as $size){
                             $sizeModel = new ItemSizes();
                             $sizeModel->item_id=$last_insertedId;
